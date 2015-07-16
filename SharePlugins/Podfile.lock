@@ -1,10 +1,22 @@
 PODS:
   - MBProgressHUD (0.9.1)
+  - WeChatSDK (1.5.1)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
+  - WeChatSDK (from `https://github.com/Guicai-Li/WeChatSDK.git`)
+
+EXTERNAL SOURCES:
+  WeChatSDK:
+    :git: https://github.com/Guicai-Li/WeChatSDK.git
+
+CHECKOUT OPTIONS:
+  WeChatSDK:
+    :commit: e68af2796fd62750b789967d9ee1d775560ec0bd
+    :git: https://github.com/Guicai-Li/WeChatSDK.git
 
 SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  WeChatSDK: d10664c61c547efb79e8800d30f8ff99aeafa62a
 
 COCOAPODS: 0.37.2
