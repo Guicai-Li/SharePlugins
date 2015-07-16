@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [WXApi registerApp:@"wxd930ea5d5a258f4f"];
+    [WXApi registerApp:@"wxa868eab522e908ea"];
     
     return YES;
 }
@@ -33,11 +33,12 @@
 }
 
 - (void) onReq:(BaseReq*)req {
-
+    
 }
 
 - (void) onResp:(BaseResp*)resp {
-
+    //TODO:收到微信程序回应
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
