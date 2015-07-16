@@ -14,6 +14,11 @@
 		B58899611B4D12C80080EE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58899601B4D12C80080EE58 /* Images.xcassets */; };
 		B58899641B4D12C80080EE58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58899621B4D12C80080EE58 /* LaunchScreen.xib */; };
 		B58899701B4D12C80080EE58 /* SharePluginsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B588996F1B4D12C80080EE58 /* SharePluginsTests.m */; };
+		B5C2304E1B57572C008FE185 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2304A1B57572C008FE185 /* libWeChatSDK.a */; };
+		B5C2304F1B57572C008FE185 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5C2304B1B57572C008FE185 /* read_me.txt */; };
+		B5C230511B5757BD008FE185 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C230501B5757BD008FE185 /* SystemConfiguration.framework */; };
+		B5C230531B5757C9008FE185 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C230521B5757C9008FE185 /* libz.dylib */; };
+		B5C230551B5757D3008FE185 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C230541B5757D3008FE185 /* libsqlite3.0.dylib */; };
 		D91F232D1103342AC061FD75 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E017A0815943F4071A26AAD2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,13 @@
 		B58899691B4D12C80080EE58 /* SharePluginsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePluginsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B588996E1B4D12C80080EE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B588996F1B4D12C80080EE58 /* SharePluginsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePluginsTests.m; sourceTree = "<group>"; };
+		B5C2304A1B57572C008FE185 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		B5C2304B1B57572C008FE185 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		B5C2304C1B57572C008FE185 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		B5C2304D1B57572C008FE185 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		B5C230501B5757BD008FE185 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5C230521B5757C9008FE185 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B5C230541B5757D3008FE185 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		D28E2EAF536AD2DB4708D5B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E017A0815943F4071A26AAD2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE1928A1A6CDBFEC23C47CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C230551B5757D3008FE185 /* libsqlite3.0.dylib in Frameworks */,
+				B5C230531B5757C9008FE185 /* libz.dylib in Frameworks */,
+				B5C230511B5757BD008FE185 /* SystemConfiguration.framework in Frameworks */,
+				B5C2304E1B57572C008FE185 /* libWeChatSDK.a in Frameworks */,
 				D91F232D1103342AC061FD75 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +84,9 @@
 		2832F3531A9601AA4FE49781 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5C230541B5757D3008FE185 /* libsqlite3.0.dylib */,
+				B5C230521B5757C9008FE185 /* libz.dylib */,
+				B5C230501B5757BD008FE185 /* SystemConfiguration.framework */,
 				E017A0815943F4071A26AAD2 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -105,6 +124,8 @@
 		B58899521B4D12C80080EE58 /* SharePlugins */ = {
 			isa = PBXGroup;
 			children = (
+				B5C230481B57572C008FE185 /* Vendor */,
+				B5C230451B575532008FE185 /* SharePlugin */,
 				B58899571B4D12C80080EE58 /* AppDelegate.h */,
 				B58899581B4D12C80080EE58 /* AppDelegate.m */,
 				B588995A1B4D12C80080EE58 /* ViewController.h */,
@@ -141,6 +162,32 @@
 				B588996E1B4D12C80080EE58 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5C230451B575532008FE185 /* SharePlugin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SharePlugin;
+			sourceTree = "<group>";
+		};
+		B5C230481B57572C008FE185 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B5C230491B57572C008FE185 /* WeChatSDK_1.5 */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B5C230491B57572C008FE185 /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2304A1B57572C008FE185 /* libWeChatSDK.a */,
+				B5C2304B1B57572C008FE185 /* read_me.txt */,
+				B5C2304C1B57572C008FE185 /* WXApi.h */,
+				B5C2304D1B57572C008FE185 /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +274,7 @@
 			files = (
 				B588995F1B4D12C80080EE58 /* Main.storyboard in Resources */,
 				B58899641B4D12C80080EE58 /* LaunchScreen.xib in Resources */,
+				B5C2304F1B57572C008FE185 /* read_me.txt in Resources */,
 				B58899611B4D12C80080EE58 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SharePlugins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SharePlugins/Vendor/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -420,6 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SharePlugins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SharePlugins/Vendor/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
